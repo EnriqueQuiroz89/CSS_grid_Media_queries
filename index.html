@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .grid-container {
+            min-height: 400px;
+            width: 100%;
+            background: burlywood;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 5px;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .d1 {
+            background: silver;
+        }
+
+        .d2 {
+            background: blue;
+        }
+
+        .d3 {
+            background: cornflowerblue;
+        }
+
+        .d4 {
+            background: yellow;
+        }
+
+        .d5 {
+            background: greenyellow;
+        }
+
+        .d6 {
+            background: fuchsia;
+        }
+
+        .d7 {
+            background:indianred;
+        }
+
+        .d8 {
+            background: navy;
+        }
+
+        .d9 {
+            background: skyblue;
+        }
+
+        .d10 {
+            background: mediumorchid;
+        }
+
+        .d11 {
+            background: aqua;
+        }
+
+        .d12 {
+            background: blueviolet;
+        }
+
+        @media (min-width: 1200px) {
+            .grid-container {
+                background-color: greenyellow;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                width: 1000px;
+                margin: 0px auto;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .grid-container {
+                background-color: pink;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .grid-container {
+                background-color: indianred;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .grid-container {
+                background-color: gold;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                background-color: silver;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .grid-container {
+                background-color: lightblue;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="grid-container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+        <div class="d6">6</div>
+
+        <div class="d7">7</div>
+        <div class="d8">8</div>
+        <div class="d9">9</div>
+
+        <div class="d10">10</div>
+        <div class="d11">11</div>
+        <div class="d12">12</div>
+
+    </div>
+
+
+</body>
+
+</html>
